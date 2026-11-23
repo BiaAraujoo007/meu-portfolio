@@ -1,0 +1,253 @@
+:root{--bg:#f7f8fc;
+    --surface:#fff;
+    --text:#20243a;
+    --muted:#626b80;
+    --accent:#7256e8;
+    --accent-soft:#ede8ff;
+    --border:#e4e5ed;
+    --shadow:0 18px 50px rgba(34,30,80,.08)}
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth;
+    scroll-padding-top:80px}
+
+body{background:var(--bg);
+        color:var(--text);
+        font-family:system-ui,
+        -apple-system,'Segoe UI',sans-serif;
+        transition:background .25s,color .25s}
+
+body.escuro{--bg:#101321;
+    --surface:#1a1f31;
+    --text:#f5f4ff;
+    --muted:#b5bad0;
+    --accent:#aa95ff;
+    --accent-soft:#30264c;
+    --border:#34384f;
+    --shadow:0 18px 50px rgba(0,0,0,.18)}
+
+a{color:var(--accent)}
+
+.accent{color:var(--accent)}
+
+.navbar{background:var(--surface);
+    border-bottom:1px solid var(--border);
+    box-shadow:0 3px 20px rgba(0,0,0,.025)}
+
+.navbar-brand,.nav-link{color:var(--text)!important}
+
+.nav-link:hover{color:var(--accent)!important}
+
+.navbar-toggler{border-color:var(--border);
+    background:#eee9ff}
+
+.btn{padding:.7rem 1.15rem;border-radius:12px;font-weight:600}
+
+.btn-accent{background:var(--accent);
+    color:#fff;
+    border:1px solid var(--accent)}
+
+.btn-accent:hover{background:#5840c4;
+    color:#fff}
+
+.btn-outline-accent{color:var(--accent);
+    border:1px solid var(--accent)}
+
+.btn-outline-accent:hover{background:var(--accent-soft);
+    color:var(--accent)}.section-space{padding:100px 0}
+
+.hero{padding-top:170px;min-height:660px;
+    background:radial-gradient(circle at 85% 20%,var(--accent-soft),transparent 38%)}
+
+.eyebrow{display:block;color:var(--accent);
+    font-size:.78rem;
+    font-weight:800;
+    letter-spacing:.16em;
+    margin-bottom:15px}
+
+h1{font-size:clamp(2.8rem,6vw,5.5rem);
+    font-weight:800;
+    line-height:1.08;
+    letter-spacing:-.055em;
+    margin-bottom:24px}
+
+h2{font-size:clamp(2rem,4vw,3rem);
+    font-weight:800;
+    letter-spacing:-.04em;
+    margin-bottom:25px}
+
+h3{font-size:1.3rem;
+    font-weight:750}
+
+p{color:var(--muted);
+    line-height:1.8}
+
+.lead{max-width:690px;color:var(--muted)}
+
+.theme-message{font-size:.9rem;margin:20px 0}
+
+.hero-mark {
+    width: min(100%, 310px);
+    aspect-ratio: 1;
+    margin: auto;
+    border: 2px solid var(--accent);
+    border-radius: 40px;
+    overflow: hidden;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    transform: rotate(5deg);
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.hero-mark small{font-size:.85rem;
+    font-weight:600;
+    color:var(--muted);
+    transform:rotate(-5deg)}
+
+.surface{background:var(--surface)}
+
+.info-card,.skill-card,.project-card,
+
+.contact-form{background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:20px;
+    box-shadow:var(--shadow)}
+    
+.info-card,.skill-card,.contact-form{padding:28px}
+
+.skill-card{height:100%}
+
+.skill-card>span{color:var(--accent);font-weight:800}
+
+.skill-card h3{margin-top:22px}
+
+.skill-card p{margin-bottom:0}
+
+.section-intro{margin-top:-10px}
+
+.showcase{border-radius:22px;
+    overflow:hidden;
+    background:linear-gradient(120deg,#29244e,#7659d7);
+    color:white}
+
+.slide-content{min-height:300px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:45px 70px}
+
+.slide-content span{font-size:.8rem;
+    letter-spacing:.15em;
+    opacity:.8}
+
+.slide-content h3{font-size:clamp(1.5rem,3vw,2.4rem);
+    margin:15px 0}
+
+.slide-content p{color:#e5dcff;max-width:500px}
+
+.project-card{height:100%;overflow:hidden}
+
+.project-card p{min-height:90px}
+
+.project-visual{height:160px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px;
+    font-size:3rem;
+    font-weight:800}
+.project-visual span{font-size:1.4rem}
+
+.visual-one{background:#e5ddff;color:#6548c5}
+
+.visual-two{background:#ffe5c6;color:#a05c20}
+
+.visual-three{background:#d4eee8;color:#237868}
+
+.tech-tag{display:inline-block;
+    background:var(--accent-soft);
+    color:var(--accent);
+    padding:5px 9px;
+    border-radius:8px;
+    font-size:.75rem;
+    font-weight:700;
+    margin:3px 2px 0 0}
+
+.accordion-item,.accordion-button{background:var(--surface);
+    color:var(--text);
+    border-color:var(--border)}
+
+.accordion-button:not(.collapsed){background:var(--accent-soft);color:var(--text)}
+
+.accordion-body{color:var(--muted)}
+
+.form-control{background:var(--bg);border-color:var(--border);color:var(--text)}
+
+.form-control:focus{background:var(--bg);color:var(--text);border-color:var(--accent);box-shadow:0 0 0 .2rem var(--accent-soft)}
+
+.form-label{font-weight:600}
+
+.muted{color:var(--muted)}
+
+.footer{border-top:1px solid var(--border);padding:25px 0;color:var(--muted)}
+
+.footer a{text-decoration:none}
+
+#cursor{position:fixed;left:0;top:0;width:16px;height:16px;border:2px solid var(--accent);border-radius:50%;pointer-events:none;z-index:2000;transform:translate(-50%,-50%);opacity:0;transition:opacity .2s}
+#cursor.visivel{opacity:1}@media(max-width:767px){.section-space{padding:70px 0}
+
+.hero{padding-top:130px;min-height:unset}
+
+.hero-mark{max-width:220px;font-size:4rem}
+
+.slide-content{padding:40px 45px}
+
+.project-card p{min-height:unset}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+.hobby-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 35px 28px;
+    height: 100%;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+}
+
+.hobby-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hobby-card h3 {
+    color: var(--text);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.hobby-card p {
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .hobby-card {
+        padding: 25px;
+    }
+}
